@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<script type="text/JavaScript">
+         
+            function AutoRefresh( t ) {
+               setTimeout("location.reload(true);", t);
+            }
+         
+      	</script>
+		<meta charset="utf-8">
+		<title>SERVER UNIT</title>
+	</head>
+
+	<body onload="JavaScript:AutoRefresh(10000);">
+		<center><h1><b>ACCIDENT<b></h1></center>
+		</br>
+		<h2>Accident Info</h2>
+		<p>
+			<ul>Car no.: {{carno}}</ul>
+			<ul>Latitude: {{lat}}</ul>
+			<ul>Longitude: {{longg}}</ul>
+			<ul>Address: {{addr}} </ul>
+			<hr>
+			<h3>GO TO:</h3>
+			<center> {{hospital_name}} </center>
+		</p>
+	</body>
+</html>
